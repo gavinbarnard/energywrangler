@@ -4,6 +4,7 @@ version 2 write
 """
 
 import logging
+import os
 from datetime import datetime
 
 import pygame
@@ -25,6 +26,11 @@ def main(p_win_style=0):
     hour = date_time_obj.hour
     minute = date_time_obj.minute
     second = date_time_obj.second
+    try:
+        os.mkdir("log")
+    except FileExistsError:
+        pass
+
     logging.basicConfig(
         level=logging.INFO,
         filename="log/{}-{}{:02d}{:02d}-{:02d}{:02d}{:02d}.log".format(
