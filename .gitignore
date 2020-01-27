@@ -1,0 +1,4 @@
+__pycache__/*
+log/*
+wrang/__pycache__/*
+wrang/__pycache__/*.pyc
