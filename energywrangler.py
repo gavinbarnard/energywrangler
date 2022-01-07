@@ -33,8 +33,8 @@ def main(p_win_style=0):
 
     logging.basicConfig(
         level=logging.INFO,
-        filename="log/{}-{}{:02d}{:02d}-{:02d}{:02d}{:02d}.log".format(
-            __file__,
+        filename="./log/{}-{}{:02d}{:02d}-{:02d}{:02d}{:02d}.log".format(
+            "engergywrangler",
             year,
             month,
             day,
